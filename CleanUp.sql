@@ -1,5 +1,3 @@
-USE Lab;
-GO
 DECLARE @SQL NVARCHAR(MAX) = N'';
 
 SELECT @SQL +=
@@ -13,4 +11,4 @@ WHERE is_ms_shipped = 0;
 PRINT @SQL;
 
 -- Execute
---EXEC sys.sp_executesql @SQL;
+EXEC sys.sp_executesql @SQL;

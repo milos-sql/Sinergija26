@@ -7,7 +7,7 @@ DECLARE @StartTime DATETIME2(7) = SYSDATETIME();
 DECLARE @ElapsedMs BIGINT;
 DECLARE @Message NVARCHAR(200);
 
-EXEC dbo.Workload1;
+EXEC dbo.Workload2;
 
 SET @ElapsedMs = DATEDIFF_BIG(MICROSECOND, @StartTime, SYSDATETIME()) / 1000;
 
